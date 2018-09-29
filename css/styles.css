@@ -72,17 +72,17 @@ nav h1 a:focus {
 }
 
 #breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
-    margin: 0;
-    width: calc(50% - 80px);
+  padding: 10px 30px 10px;
+  list-style: none;
+  background-color: #e3e3e3;
+  margin: 0;
+  display: flex;
 }
 
 /* Display list items side by side */
 #breadcrumb li {
-    display: inline;
+  display: inline;
+  font-weight: 600;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
