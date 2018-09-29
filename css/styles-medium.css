@@ -44,3 +44,8 @@ nav h1 a {
 #restaurant-container {
   margin-top: 100px
 }
+.inside #footer {
+  padding: 20px;
+  width: 350px;
+  box-sizing: border-box;
+}
