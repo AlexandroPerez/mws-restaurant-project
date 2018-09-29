@@ -77,6 +77,8 @@ nav h1 a:focus {
   background-color: #e3e3e3;
   margin: 0;
   display: flex;
+  box-sizing: border-box;
+  height: 40px;
 }
 
 /* Display list items side by side */
@@ -206,16 +208,16 @@ nav h1 a:focus {
   z-index: 1000;
 }
 .inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+  height: 70vw;
+  max-height: 400px;
+  position: static;
+  width: 100%;
+  margin-top: 100px;
 }
 .inside #map {
   background-color: #ccc;
   height: 100%;
+  max-height: none;
   width: 100%;
 }
 .inside #footer {
