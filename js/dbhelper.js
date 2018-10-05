@@ -167,8 +167,8 @@ class DBHelper {
   }
 
   /**
-   * Restaurant sizes attribute so browser knows image sizes before deciding wich image to download
-   * with srcset. It uses restaurant.photograph and fallbacks to restaurant.id if former is missing.
+   * Restaurant sizes attribute so browser knows image sizes before deciding
+   * what image to download.
    */
   static imageSizesForRestaurant(restaurant) {
     return `(max-width: 360px) 280px,
