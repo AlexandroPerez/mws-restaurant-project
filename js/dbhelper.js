@@ -151,7 +151,7 @@ class DBHelper {
    * and fallbacks to restaurant.id if former is missing.
    */
   static imageUrlForRestaurant(restaurant) {
-    let url = `/img/${(restaurant.photograph.slice('.')[0]||restaurant.id)}-medium.jpg`;
+    let url = `/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}-medium.jpg`;
     return url;
   }
 
@@ -160,7 +160,7 @@ class DBHelper {
    * and fallbacks to restaurant.id if former is missing.
    */
   static imageSrcsetForRestaurant(restaurant) {
-    const imageSrc = `/img/${(restaurant.photograph.slice('.')[0]||restaurant.id)}`;
+    const imageSrc = `/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}`;
     return `${imageSrc}-small.jpg 300w,
             ${imageSrc}-medium.jpg 600w,
             ${imageSrc}-large.jpg 800w`;
