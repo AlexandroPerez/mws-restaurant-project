@@ -21,6 +21,7 @@ self.addEventListener('install', function(event) {
         '/js/secret.js',
         '/js/main.js',
         '/js/restaurant_info.js',
+        '/js/register-sw.js',
         'data/restaurants.json'
         // add other static assets here like logos, svg icons or any
         // other asset needed for your app UI 
@@ -43,6 +44,17 @@ self.addEventListener('activate', function(event) {
           return caches.delete(cacheName);
         })
       );
+    })
+  );
+});
+
+/** Hijack fetch requests and respond accordingly */
+self.addEventListener('fetch', function(event) {
+
+  // Default behavior: respond with cached elements, if any, falling back to network.
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
     })
   );
 });
