@@ -68,7 +68,7 @@ nav h1 a {
 }
 nav h1 a:hover,
 nav h1 a:focus {
-  color: #ccc;
+  color: #FFEB3B;
 }
 
 #breadcrumb {
@@ -141,6 +141,10 @@ nav h1 a:focus {
   display: block;
   box-sizing: border-box;
 }
+.filter-options select:hover,
+.filter-options select:focus {
+  background-color: #cbdfe6;
+}
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
@@ -198,6 +202,10 @@ nav h1 a:focus {
   text-transform: uppercase;
   width: 100%;
   box-sizing: border-box;
+}
+#restaurants-list li a:hover,
+#restaurants-list li a:focus {
+  background-color: red;
 }
 
 /* ====================== Restaurant Details ====================== */
