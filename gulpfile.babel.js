@@ -106,7 +106,7 @@ gulp.task('sync', ['build'], function() {
   Object.keys(jsBundles).forEach(function(key) {
     var b = jsBundles[key];
     b.on('update', function() {
-      return bundle(b, key);
+      bundle(b, key); // do not use return, or else only one bundle will be created
     });
   });
 });
