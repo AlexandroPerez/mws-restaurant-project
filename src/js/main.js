@@ -1,12 +1,12 @@
 import DBHelper from './dbhelper';
 import SECRET from './secret';
-// import './register-sw';
+import './register-sw';
 
 let restaurants,
   neighborhoods,
   cuisines
 var newMap
-var markers = [] // ddk dke der
+var markers = []
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.

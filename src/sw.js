@@ -1,5 +1,5 @@
 const appName = "restaurant-reviews"
-const staticCacheName = appName + "-v1.0";
+const staticCacheName = appName + "-v2.0";
 
 const contentImgsCache = appName + "-images";
 
@@ -19,7 +19,15 @@ self.addEventListener('install', function(event) {
         '/css/styles-medium.css',
         '/js/main.js',
         '/js/restaurant_info.js',
-        'data/restaurants.json'
+        '/manifest.json',
+        'images/icons/icon-72x72.png',
+        'images/icons/icon-96x96.png',
+        'images/icons/icon-128x128.png',
+        'images/icons/icon-144x144.png',
+        'images/icons/icon-152x152.png',
+        'images/icons/icon-192x192.png',
+        'images/icons/icon-384x384.png',
+        'images/icons/icon-512x512.png'
         // add other static assets here like logos, svg icons or any
         // other asset needed for your app UI 
         // (Don't add restaurant images, as they are not part of your
